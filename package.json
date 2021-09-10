@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/Massimilianonigro/node-red-distributed-flows#readme",
   "node-red": {
-	  "nodes": {
-		  "producer": "producer.js"
-	  }
+    "nodes": {
+      "producer": "producer.js"
+    }
+  },
+  "dependencies": {
+    "kafkajs": "^1.15.0"
   }
-
 }
