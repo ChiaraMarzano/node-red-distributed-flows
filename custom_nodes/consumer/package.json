@@ -1,0 +1,27 @@
+{
+  "name": "node-red-kafka-consumer",
+  "version": "0.0.1",
+  "description": "consumer node for node-red distributed flows",
+  "main": "consumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Massimilianonigro/node-red-distributed-flows.git"
+  },
+  "keywords": [
+    "node-red",
+    "kafka",
+    "consumer"
+  ],
+  "author": "Chiara Marzano, Massimiliano Nigro, Daniele Paletti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Massimilianonigro/node-red-distributed-flows/issues"
+  },
+  "homepage": "https://github.com/Massimilianonigro/node-red-distributed-flows#readme",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
+}
