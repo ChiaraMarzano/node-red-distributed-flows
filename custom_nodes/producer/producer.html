@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('producer',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            clientId: {value:""},
+            broker: {value:""},
+            topic: {value: ""},
+            name: {value: ""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "beetle.png",
+        label: function() {
+            return this.name||"producer";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lower-case">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lower-case">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
