@@ -4,6 +4,8 @@ module.exports = function (RED) {
         var node = this;
         node.on('input', async function (msg) {
             const { Kafka } = require('kafkajs')
+            var Mitm = require('mitm')
+            var mitm = Mitm()
             const kafka = new Kafka({
                 clientId: config.clientId,
                 brokers: [config.broker]

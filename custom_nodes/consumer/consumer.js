@@ -3,6 +3,8 @@ module.exports = function (RED) {
         RED.nodes.createNode(this, config);
         var node = this;
         node.on('input', async function (msg) {
+            var Mitm = require('mitm')
+            var mitm = Mitm()
             const { Kafka } = require('kafkajs')
             const kafka = new Kafka({
                 clientId: config.clientId,

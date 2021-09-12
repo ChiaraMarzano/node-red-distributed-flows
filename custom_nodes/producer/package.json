@@ -27,6 +27,7 @@
     }
   },
   "dependencies": {
-    "kafkajs": "^1.15.0"
+    "kafkajs": "^1.15.0",
+    "mitm": "^1.7.2"
   }
 }
