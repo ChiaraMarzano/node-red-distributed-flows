@@ -1,29 +1,69 @@
 <script type="text/javascript">
-    RED.nodes.registerType('producer',{
+    RED.nodes.registerType('producer', {
         category: 'function',
         color: '#a6bbcf',
         defaults: {
-            clientId: {value:""},
-            broker: {value:""},
-            topic: {value: ""},
-            name: {value: ""}
+            clientId: { value: "" },
+            broker: { value: "" },
+            topic: { value: "" },
+            name: { value: "" }
         },
-        inputs:1,
-        outputs:0,
+        inputs: 1,
+        outputs: 0,
         icon: "beetle.png",
-        label: function() {
-            return this.name||"producer";
+        label: function () {
+            return this.name || "producer";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="lower-case">
+<script type="text/html" data-template-name="producer">
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
-        <input type="text" id="node-input-name" placeholder="Name">
+        <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="name"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>Topic</label>
+        <input type="text" id="node-input-name" placeholder="topic"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>Broker</label>
+        <input type="text" id="node-input-name" placeholder="broker"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>clientId</label>
+        <input type="text" id="node-input-name" placeholder="clientId">
     </div>
 </script>
 
-<script type="text/html" data-help-name="lower-case">
-    <p>A simple node that converts the message payloads into all lower-case characters</p>
-</script>
+<script type="text/html" data-help-name="node-type">
+    <p>Connects to a Kafka broker and publishes messages.</p>
+    
+    <h3>Inputs</h3>
+        <dl class="message-properties">
+            <dt>payload
+                <span class="property-type">string | buffer</span>
+            </dt>
+            <dd> the payload of the message to publish. </dd>
+            <dt class="optional">topic <span class="property-type">string</span></dt>
+            <dd> the Kafka topic to publish to.</dd>
+        </dl>
+    
+     <h3>Outputs</h3>
+         <ol class="node-ports">
+             <li>Standard output
+                 <dl class="message-properties">
+                     <dt>No output<span class="property-type">string</span></dt>
+                 </dl>
+             </li>
+             <li>Standard error
+                 <dl class="message-properties">
+                     <dt>payload <span class="property-type">string</span></dt>
+                     <dd>the standard error of the command.</dd>
+                 </dl>
+             </li>
+         </ol>
+    
+    <h3>Details</h3>
+        <p><code>msg.payload</code> is used as the payload of the published message.
+        <p>The topic used can be configured in the node.</p>
+    
+    <h3>References</h3>
+        <ul>
+            <li><a href="https://github.com/Massimilianonigro/node-red-distributed-flows.git">GitHub</a> - the nodes github repository</li>
+        </ul>
+    </script>

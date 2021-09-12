@@ -1,0 +1,65 @@
+<script type="text/javascript">
+    RED.nodes.registerType('consumer', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            clientId: { value: "" },
+            broker: { value: "" },
+            topic: { value: "" },
+            name: { value: "" }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "beetle.png",
+        label: function () {
+            return this.name || "consumer";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="consumer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>Topic</label>
+        <input type="text" id="node-input-name" placeholder="topic"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>Broker</label>
+        <input type="text" id="node-input-name" placeholder="broker"><br>
+        <label for="node-input-name"><i class="fa fa-tag"></i>clientId</label>
+        <input type="text" id="node-input-name" placeholder="clientId">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="node-type">
+    <p>Connects to a Kafka broker and consumes messages.</p>
+    
+    <h3>Inputs</h3>
+        <dl class="message-properties">
+            <dt>No Input
+            </dt>
+        </dl>
+    
+     <h3>Outputs</h3>
+         <ol class="node-ports">
+             <li>Standard output
+                 <dl class="message-properties">
+                     <dt>Consumed Message<span class="property-type">Object</span></dt>
+                     <dd>Message consumed from the kafka topic</dd>
+                 </dl>
+             </li>
+             <li>Standard error
+                 <dl class="message-properties">
+                     <dt>payload <span class="property-type">string</span></dt>
+                     <dd>the standard error of the command.</dd>
+                 </dl>
+             </li>
+         </ol>
+    
+    <h3>Details</h3>
+        <p>The topic used can be configured in the node.</p>
+    
+    <h3>References</h3>
+        <ul>
+            <li><a href="https://github.com/Massimilianonigro/node-red-distributed-flows.git">GitHub</a> - the nodes github repository</li>
+        </ul>
+    </script>

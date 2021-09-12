@@ -2,7 +2,7 @@ module.exports = function (RED) {
     function ConsumerNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        node.on('input', function (msg) {
+        node.on('input', async function (msg) {
             const { Kafka } = require('kafkajs')
             const kafka = new Kafka({
                 clientId: config.clientId,

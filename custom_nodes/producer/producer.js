@@ -2,7 +2,7 @@ module.exports = function (RED) {
     function ProducerNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        node.on('input', function (msg) {
+        node.on('input', async function (msg) {
             const { Kafka } = require('kafkajs')
             const kafka = new Kafka({
                 clientId: config.clientId,
@@ -10,12 +10,14 @@ module.exports = function (RED) {
             })
             const producer = kafka.producer()
             await producer.connect()
-            await producer.send({
-                topic: config.topic,
-                messages: [
-                    { value: msg },
-                ],
-            })
+            if (msg.payload) {
+                await producer.send({
+                    topic: config.topic,
+                    messages: [
+                        { value: msg.payload },
+                    ],
+                })
+            }
             await producer.disconnect()
         });
     }

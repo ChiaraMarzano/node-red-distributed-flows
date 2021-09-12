@@ -21,6 +21,11 @@
     "url": "https://github.com/Massimilianonigro/node-red-distributed-flows/issues"
   },
   "homepage": "https://github.com/Massimilianonigro/node-red-distributed-flows#readme",
+  "node-red": {
+    "nodes": {
+      "consumer": "consumer.js"
+    }
+  },
   "dependencies": {
     "kafkajs": "^1.15.0"
   }
