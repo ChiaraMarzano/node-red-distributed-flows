@@ -8,11 +8,14 @@ module.exports = function (RED) {
                 clientId: config.clientId,
                 brokers: [config.broker]
             })
-            const consumer = kafka.consumer()
+            console.log(config.broker)
+            console.log(config.clientId)
+            const consumer = kafka.consumer({ groupId: 'test-group' })
             await consumer.subscribe({ topic: config.topic, fromBeginning: true })
             await consumer.run({
                 eachMessage: async ({ topic, partition, message }) => {
                     node.send(message.value)
+                    console.log(message.value)
                 },
             })
         });
