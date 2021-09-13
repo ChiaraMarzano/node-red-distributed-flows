@@ -2,23 +2,28 @@ module.exports = function (RED) {
     function ProducerNode(config) {
         RED.nodes.createNode(this, config);
         var node = this;
-        node.on('input', async function (msg) {
-            const { Kafka } = require('kafkajs')
+        node.on('input', function (msg) {
+            console.log(config.broker)
+            const { Kafka, logLevel } = require('kafkajs')
             const kafka = new Kafka({
                 clientId: config.clientId,
-                brokers: [config.broker]
+                brokers: [config.broker],
+                logLevel: logLevel.DEBUG
             })
+
             const producer = kafka.producer()
-            await producer.connect()
-            if (msg.payload) {
+            var sendMessage = async () => {
+                await producer.connect()
                 await producer.send({
                     topic: config.topic,
                     messages: [
-                        { value: msg.payload },
+                        { value: msg.payload }
                     ],
                 })
+                await producer.disconnect()
             }
-            await producer.disconnect()
+
+            sendMessage();
         });
     }
     RED.nodes.registerType("producer", ProducerNode);
