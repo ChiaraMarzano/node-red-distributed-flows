@@ -1,0 +1,312 @@
+[
+    {
+        "id": "f1cdb249141ff7ad",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "eba04bcbf28ae88f",
+        "type": "producer",
+        "z": "f1cdb249141ff7ad",
+        "clientId": "first_section_producer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "first_section",
+        "name": "first_section",
+        "x": 570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "971e4a1ef14b7f31",
+        "type": "inject",
+        "z": "f1cdb249141ff7ad",
+        "name": "il_processo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "kafka",
+        "payload": "Qualcuno doveva aver calunniato Josef K., perché, senza che avesse fatto niente di male, una mattina fu arrestato. La cuoca della signora Grubach, la sua affittacamere, che ogni giorno verso le otto gli portava la colazione, quella volta non venne. Non era mai successo prima. K. aspettò ancora un poco, guardò dal suo cuscino la vecchia che abitava di fronte e lo stava osservando con una curiosità del tutto insolita per lei, ma poi, stupito e affamato insieme, suonò il campanello. Subito bussarono e un uomo che K. non aveva mai visto prima in quella casa entrò. Era slanciato ma di solida corporatura, indossava un abito nero attillato che, come quelli da viaggio, era provvisto di varie pieghe, tasche, fibbie, bottoni e cintura, e dava quindi l'impressione, senza che si capisse bene a che cosa dovesse servire, di essere particolarmente pratico. «Lei chi è?», chiese K. subito sollevandosi a metà nel letto. Ma l'uomo eluse la domanda, come se la sua comparsa fosse da accettare e si limitò a chiedere a sua volta: «Ha suonato?». «Anna mi deve portare la colazione», disse K. e cercò, dapprima in silenzio, con l'osservazione e la riflessione, di stabilire chi mai fosse l'uomo. Ma questi non si espose troppo a lungo ai suoi sguardi, si volse verso la porta e l'aprì un poco per dire a qualcuno che stava evidentemente subito dietro: «Vuole che Anna gli porti la colazione». Ci fu una risatina nella stanza accanto, dal suono non poteva essere sicuro che non venisse da più persone. Sebbene l'estraneo non potesse con questo aver appreso nulla che già non avesse saputo prima, disse a K. con il tono di una comunicazione: «È impossibile». «Questa sarebbe nuova», disse K., saltò dal letto e s'infilò in fretta i pantaloni. «Voglio un po' vedere che gente c'è nell'altra stanza e che giustificazione mi darà la signora Grubach per questa seccatura». Gli venne subito in mente che non avrebbe dovuto dire questo a voce alta, e che in tal modo riconosceva all'estraneo un qualche diritto di controllo, ma al momento la cosa non gli parve importante. L'estraneo, comunque, l'intese così, perché disse: «Non preferisce rimanere qui?». «Non voglio rimanere qui né che lei mi rivolga la parola finché non si sarà presentato». «L'intenzione era buona», disse l'estraneo e aprì ora spontaneamente la porta. Nella stanza accanto, dove K. entrò più lentamente di quanto volesse, a un primo sguardo tutto pareva quasi immutato dalla sera prima. Era il soggiorno della signora Grubach, forse nella stanza stracolma di mobili, tessuti, porcellane e fotografie, c'era un po' più spazio del solito, non lo si vedeva subito, anche perché il cambiamento principale consisteva nella presenza di un uomo, seduto vicino alla finestra con un libro da cui ora alzò lo sguardo. «Sarebbe dovuto rimanere nella sua stanza! Non glielo ha detto Franz?». «Ma lei che cosa vuole?», disse K., e volse lo sguardo dalla nuova conoscenza all'uomo chiamato Franz, che era rimasto sulla porta, e poi ancora all'altro. Dalla finestra aperta si vedeva di nuovo la vecchia che, con una curiosità veramente senile, si era adesso spostata alla finestra dirimpetto per continuare a vedere ogni cosa. «Insomma, voglio la signora Grubach...», disse K., e fece un movimento come per divincolarsi dai due uomini, che pure stavano distanti da lui, e andarsene. «No», disse l'uomo vicino alla finestra, gettò il libro su un tavolino e si alzò. «Lei non può andarsene, è in arresto». «Si direbbe proprio», disse K. «E perché?», chiese poi. «Non siamo autorizzati a dirglielo. Vada in camera sua e aspetti. Il procedimento è appena avviato, e lei saprà tutto a tempo debito. Vado oltre il mio incarico parlandole così amichevolmente. Ma spero che non ci senta nessuno al di fuori di Franz, e anche lui è gentile con lei contro ogni regola. Se continua ad avere la fortuna che ha avuta con l'assegnazione delle sue guardie, può sperare in bene». K. volle sedersi, ma ora si accorse che in tutta la stanza non c'era possibilità di sedersi, se non sulla seggiola vicino alla finestra. «Se ne renderà conto, di come tutto questo è vero», disse Franz e mosse verso di lui insieme all'altro. Quest'ultimo, soprattutto, era parecchio più alto di K., e gli batté più volte sulla spalla. Tutti e due esaminarono la camicia da notte di K. e dissero che adesso avrebbe dovuto indossare una camicia molto più brutta, ma che avrebbero custodito quella camicia, come pure tutta l'altra sua biancheria, e che gliel'avrebbero restituita se la sua causa si fosse risolta favorevolmente. «È meglio che lei lasci a noi le sue cose piuttosto che al deposito», dissero, «perché al deposito spesso la roba sparisce e inoltre, dopo un certo tempo, vendono ogni cosa senza vedere se il procedimento relativo è concluso o meno. E quanto durano questi processi, specie negli ultimi tempi! Alla fine lei riceverebbe, questo sì, dal deposito la somma ricavata, ma prima di tutto questa somma è già scarsa in sé, perché alla vendita non è determinante tanto l'entità dell'offerta quanto quella della corruzione, e poi queste somme, per esperienza, si riducono ulteriormente passando di mano in mano e con gli anni». K. prestò scarsa attenzione a questi discorsi, non dava gran peso al diritto, che forse ancora possedeva, di disporre delle proprie cose, molto più importante per lui era vedere chiaro nella sua situazione; alla presenza di quella gente, però, non riusciva nemmeno a riflettere, la pancia della seconda guardia - perché non potevano che essere guardie - lo urtava di continuo quasi amichevolmente, ma se alzava lo sguardo vedeva un viso secco, ossuto, con un naso grosso e storto, che non si accordava per niente con quel corpo grasso, che s'intendeva con l'altra guardia senza badare a lui. Che gente era quella? Di che cosa parlavano? Da quale autorità dipendevano? Eppure K. viveva in uno stato di diritto, dappertutto regnava la pace, tutte le leggi erano in vigore, chi osava aggredirlo in casa sua? Era sempre propenso a prendere ogni cosa con disinvoltura, a credere al peggio solo quando il peggio era arrivato, a non farsi preoccupazioni per il futuro, neanche quando si presentava minaccioso. Ma ora questo non gli sembrava giusto, si poteva considerare il tutto uno scherzo, uno scherzo pesante, montato dai colleghi della banca per motivi a lui sconosciuti, magari perché oggi compiva trent'anni, era senz'altro possibile, forse gli bastava ridere in un modo qualsiasi in faccia alle guardie che avrebbero riso anche loro, forse erano fattorini dell'angolo della strada, non sembravano troppo diversi - questa volta comunque, fin dal primo momento che aveva visto la guardia Franz, era deciso a non rinunciare al minimo vantaggio che forse possedeva di fronte a quella gente. Più tardi avrebbero potuto dirgli che non aveva capito lo scherzo, ma in questo K. vedeva un rischio minimo, eppure si ricordava - senza che fosse sua abitudine imparare dall'esperienza - di alcuni casi, di per sé insignificanti, in cui a differenza dei suoi amici aveva agito coscientemente con imprudenza, senza minimamente darsi pensiero per le possibili conseguenze, ed era poi stato punito dai fatti. Non sarebbe più successo, almeno non questa volta; se era una commedia, lui sarebbe stato al gioco. Era ancora libero. «Con permesso», disse, e passando fra le due guardie tornò svelto nella sua stanza. «Sembra ragionevole», sentì dire dietro di sé. In camera aprì subito con uno scatto i cassetti della scrivania, dentro tutto era in ordine perfetto, ma nella sua agitazione non riuscì immediatamente a trovare proprio quei documenti d'identità che cercava. Finalmente trovò la tessera di ciclista e con quella voleva subito andare dalle guardie, ma poi gli parve un documento troppo poco importante e continuò a cercare finché trovò il certificato di nascita. Quando ritornò nella stanza accanto, la porta di fronte si aprì e la signora Grubach fece per entrare. La si vide solo un istante perché, appena riconosciuto K., rimase visibilmente imbarazzata, chiese scusa, sparì e chiuse con estrema cautela la porta. «Entri pure», aveva appena fatto in tempo a dire K. Ma ora se ne stava in piedi in mezzo alla stanza con i suoi documenti, guardò ancora verso la porta che non si riapriva e si scosse solo a un richiamo delle guardie che sedevano a un tavolino vicino alla finestra e, come K. ora si accorse, consumavano la sua colazione. «Perché non è entrata?», chiese. «Non può», disse la guardia più alta. «Lei è in arresto». «Come posso essere in arresto? In questo modo, poi». «Non ricominci adesso», disse la guardia e intinse una fetta di pane imburrata nel vasetto del miele. «A queste domande non rispondiamo». «Dovrà rispondere», disse K. «Ecco i miei documenti d'identità, fatemi vedere ora i vostri e soprattutto il mandato di arresto». «Santo cielo!», disse la guardia, «possibile che lei non riesca a rassegnarsi alla sua situazione e per giunta sembri mettercela tutta per irritarci inutilmente, noi che adesso le siamo forse più vicini di qualsiasi altro essere umano!». «È così, creda», disse Franz, e non portò alla bocca la tazza di caffè che teneva in mano, ma fissò K. con un lungo sguardo, probabilmente carico di significato, ma incomprensibile. K. indulse senza volere a un muto colloquio con Franz, poi batté la mano sui suoi documenti e disse: «Ecco i miei documenti d'identità». «Che ce ne importa a noi?» gridò la guardia più alta. «Si comporta peggio di un bambino. Ma che cosa vuole? Vuole chiudere in fretta il suo grosso, maledetto processo discutendo con noialtre guardie di documenti e mandati? Noi siamo impiegati in sottordine che ne capiscono a malapena di documenti d'identità e che con la sua faccenda hanno a che fare solo per sorvegliarla dieci ore al giorno ed essere pagati per questo. Tutto qui quello che siamo, e tuttavia siamo in grado di comprendere che le alte autorità da cui dipendiamo, prima di disporre un simile arresto s'informano con esattezza sui motivi dell'arresto e sulla persona dell'arrestato. Qui non c'è errore. Le nostre autorità, per quanto le conosco, e conosco solo i gradi più bassi, non è che cerchino la colpa nella popolazione, ma, come è detto nella legge, vengono attratte dalla colpa e devono mandare noi guardie. Questa è legge. Dove ci sarebbe un errore?». «Questa legge non la conosco», disse K. «Tanto peggio per lei», disse la guardia. «Esiste solo nelle vostre teste, del resto», disse K. Cercava in qualche modo di penetrare nei pensieri delle guardie, di volgerli a suo favore o di farli suoi. Ma la guardia si limitò a ribattere: «Avrà occasione di accorgersene». Franz intervenne dicendo: «Lo senti, Willem, ammette di non conoscere la legge e intanto sostiene di essere innocente». «Hai ragione, ma non si riesce a fargli capire niente», disse l'altro. K. non rispose più niente; devo forse, pensò, farmi confondere ancora di più dalle chiacchiere di questi infimi esecutori, come loro stessi ammettono di essere? In ogni caso parlano di cose che neanche capiscono. La loro sicurezza è possibile solo grazie alla loro stupidità. Due parole scambiate con un mio pari faranno più chiarezza su tutta la faccenda di lunghi discorsi con questi due. Andò avanti e indietro un paio di volte nello spazio sgombro della stanza, vide di fronte la vecchia che aveva trascinato alla finestra un uomo molto più vecchio ancora e lo teneva abbracciato. K. doveva porre fine a questo spettacolo: «Portatemi dal vostro superiore», disse. «Quando lo vorrà lui, non prima», disse la guardia che era stata chiamata Willem. «E ora», aggiunse, «le consiglio di andare in camera sua, starsene tranquillo e aspettare quel che si deciderà a suo riguardo. La consigliamo di non perdersi in pensieri inutili, si concentri, invece, le si richiederà un grosso sforzo. Lei non ci ha trattati come la nostra comprensione avrebbe meritato, lei ha dimenticato che noi, si sia quel che si sia, almeno ora, confronto a lei, siamo uomini liberi, e non è superiorità da poco. Comunque, se lei ha i soldi, siamo disposti a portarle una piccola colazione dal caffè di fronte». Per un momento K. rimase in silenzio senza dar risposta a questa offerta. Forse, se avesse aperto la porta della stanza attigua o addirittura quella dell'anticamera, i due non avrebbero osato trattenerlo, forse la soluzione più semplice dell'intera faccenda sarebbe stata spingere le cose all'estremo. Magari però lo avrebbero afferrato, e, una volta sconfitto, lui avrebbe perso anche la superiorità che ora, da un certo punto di vista, manteneva nei loro confronti. Preferì quindi la sicurezza della soluzione a cui si sarebbe senz'altro giunti lasciando le cose al loro decorso naturale, e tornò nella stanza, senza che da parte sua o delle sue guardie venisse una sola parola. Si gettò sul letto e prese dal lavabo una bella mela che si era preparato la sera prima per la colazione. Adesso era tutta la sua colazione e ad ogni modo, come si accertò dal primo grosso morso, molto migliore di quanto sarebbe stata la colazione che le sue guardie, per grazia loro, avrebbero potuto portargli dal sudicio caffè notturno. Si sentì bene e fiducioso, quella mattina avrebbe perso delle ore di lavoro in banca, certo, ma nella posizione piuttosto alta che ora occupava sarebbe stato facilmente scusato. Doveva addurre la vera scusa? Pensava di farlo. Se non gli avessero creduto, cosa comprensibile in un caso come questo, poteva chiamare come testimone la signora Grubach, o anche i due vecchi di fronte, che ora si stavano certo spostando alla finestra dirimpetto. K. si stupì, o almeno si stupì secondo il ragionamento delle guardie, che lo avessero rimandato in camera e ve l'avessero lasciato solo, dove aveva dieci volte la possibilità di uccidersi. Ma allo stesso tempo si chiedeva, questa volta secondo il suo ragionamento, che motivo avrebbe mai potuto avere per farlo. Forse perché quei due sedevano nella stanza accanto e gli avevano fatto fuori la colazione? Sarebbe stato talmente assurdo uccidersi che, se anche avesse voluto farlo, non ne sarebbe stato capace per l'assurdità della cosa. Se la limitatezza mentale delle due guardie non fosse stata così evidente, si sarebbe potuto ammettere che anche loro, per la stessa convinzione, non avessero visto nessun rischio nel lasciarlo solo. Ora, volendo, avrebbero potuto vederlo andare a un armadietto a muro, in cui custodiva una buona acquavite, vuotarsene un primo bicchierino in sostituzione della colazione e farne seguire un secondo per darsi coraggio, quest'ultimo solo per precauzione, nell'improbabile caso che ce ne fosse bisogno. In quel momento un grido dalla stanza accanto lo spaventò, tanto che batté i denti contro il bicchiere. «L'ispettore la chiama!». Fu solo il grido a spaventarlo, un grido breve, secco, militaresco, di cui non avrebbe creduto capace la guardia Franz. L'ordine in sé gli giunse molto gradito. «Finalmente!», gridò di ritorno, chiuse a chiave l'armadio e si affrettò nella stanza accanto. Lì c'erano le due guardie che lo ricacciarono, come se fosse ovvio, nella sua stanza. «Che le salta in mente?», esclamarono. «Vuole presentarsi in camicia da notte davanti all'ispettore? La farebbe bastonare, e noi con lei!». «Lasciatemi, perdio!», gridò K., che si trovò già respinto all'armadio dei vestiti, «se mi si assale nel mio letto non ci si può aspettare di trovarmi vestito per la festa». «Non serve a niente», dissero le guardie che, quando K. gridava, si facevano sempre calme, anzi quasi tristi, cosa che lo sconcertava o lo portava in certo modo a riflettere. «Cerimonie ridicole!», brontolò, ma intanto prese una giacca dalla seggiola e la tenne un momento sollevata con le due mani, come per sottoporla al giudizio delle guardie. Queste scossero la testa. «Dev'essere una giacca nera», dissero. K. allora buttò in terra la giacca e disse, senza sapere nemmeno lui in che senso lo diceva: «Ma non è ancora l'udienza principale!». Le guardie sorrisero, ma insistettero nel loro: «Dev'essere una giacca nera». «Se con questo sveltisco la cosa, mi va bene», disse K., aprì l'armadio dei vestiti, cercò a lungo fra i molti abiti, scelse il suo abito nero migliore, un completo così attillato in vita che aveva suscitato quasi scalpore fra i conoscenti, tirò fuori un'altra camicia e cominciò a vestirsi con cura. Segretamente pensava di avere sveltito la cosa, in quanto le guardie avevano dimenticato di costringerlo ad andare nel bagno. Li osservò, caso mai se ne ricordassero, ma naturalmente a quelli non passò neanche per la testa, Willem per contro non si dimenticò di mandare Franz dall'ispettore per avvertire che K. si stava vestendo. Quando fu completamente vestito, precedendo di pochi passi Willem, dovette attraversare la stanza accanto, che era vuota, e passare in quella successiva, la cui porta a due battenti era già aperta. Come K. ben sapeva, questa stanza era abitata da qualche tempo da una certa signorina Bürstner, una dattilografa che soleva andare al lavoro la mattina presto e tornare a casa tardi e con la quale K. aveva scambiato qualche parola di saluto o poco più. Il comodino era stato ora spostato dal suo letto nel centro della stanza come tavolo da udienza, e dietro stava seduto l'ispettore. Aveva le gambe accavallate e appoggiava un braccio allo schienale della seggiola. In un angolo della stanza c'erano tre giovani che guardavano le fotografie della signorina Bürstner appuntate a una stuoia appesa al muro. Alla maniglia della finestra aperta pendeva una camicetta bianca. Alla finestra di fronte c'erano di nuovo i due vecchi, ma la compagnia si era accresciuta, perché dietro di loro c'era un uomo molto più alto, con una camicia aperta sul petto, che tirava e rigirava fra le dita una barbetta rossa. «Josef K.?», chiese l'ispettore, forse solo per richiamare su di sé lo sguardo distratto di K. Questi annuì. «Lei è molto stupito di quanto è avvenuto stamattina, vero?», chiese l'ispettore, e spostò intanto con entrambe le mani i pochi oggetti che si trovavano sul comodino, la candela con i fiammiferi, un libro e un puntaspilli, quasi fossero oggetti necessari per l'udienza. «Certo», disse K. e provò subito una sensazione di sollievo al trovarsi finalmente di fronte a una persona ragionevole con cui poter parlare della sua faccenda. «Certo, sono stupito, ma non poi molto stupito». «Non molto stupito?», chiese l'ispettore e mise la candela al centro del comodino radunandole intorno gli altri oggetti. «Forse lei mi ha frainteso», si affrettò a notare K. «Voglio dire...» e qui K. s'interruppe e guardò intorno per cercare una seggiola. «Posso sedermi?», chiese. «Di solito non si fa», rispose l'ispettore. «Voglio dire», riprese K. senza più fare pause, «è vero che sono stupito, ma quando uno è al mondo da trent'anni e si è dovuto fare largo da solo, com'è il caso mio, ha fatto il callo alle sorprese e non ci dà più peso. Soprattutto non a quella di oggi». «Perché soprattutto non a quella di oggi?». «Non voglio dire di prendere tutto per uno scherzo, le disposizioni prese mi sembrano troppo ampie. Vi dovrebbero prendere posto tutti gl'inquilini della pensione e anche tutti voi, e si supererebbero i limiti di uno scherzo. Non voglio quindi dire che si tratta di uno scherzo». «Giustissimo», disse l'ispettore, e guardò quanti fiammiferi c'erano nella scatola. «Ma d'altra parte», continuò K. volgendosi a tutti, e avrebbe voluto attrarre anche l'attenzione dei tre che stavano guardando le fotografie, «d'altra parte, la faccenda non può nemmeno avere molta importanza. Lo deduco dal fatto che sono accusato, ma non riesco a trovare la minima colpa di cui mi si possa accusare. Ma anche questo è secondario, la questione essenziale è da chi sono accusato. Quale autorità conduce il procedimento? Siete dei funzionari? Nessuno ha un'uniforme, a meno che...», e qui si rivolse a Franz, «non si voglia chiamare uniforme il suo vestito, ma è piuttosto un abito da viaggio. In queste questioni esigo chiarezza, e sono convinto che, dopo questo chiarimento, potremo congedarci con la massima cordialità». L'ispettore picchiò la scatola dei fiammiferi sul comodino. «Lei sta facendo un grosso errore», disse. «Questi signori e io abbiamo ben poco a che vedere con la sua faccenda, non ne sappiamo addirittura quasi nulla. Potremmo indossare la più regolare delle uniformi che la sua causa non peggiorerebbe affatto. Non posso nemmeno dirle che è accusato, o meglio, non so se lo è. Lei è in arresto, questo è esatto, di più non so. Magari le guardie hanno fatto altre chiacchiere, in questo caso è appunto di chiacchiere che si è trattato. Ma se ora non rispondo alle sue domande, posso tuttavia darle un consiglio, pensi meno a noi e a quello che le succederà, pensi piuttosto a sé. E non faccia tanto chiasso con il suo sentirsi innocente, nuoce all'impressione non proprio cattiva che lei per il resto dà. Dovrebbe avere poi anche più ritegno nel parlare, quasi tutto quello che lei ha detto prima lo si sarebbe potuto anche ricavare dal suo contegno, bastava dicesse solo un paio di parole, e del resto non era niente che le potesse giovare gran che». K. fissò l'ispettore. Si lasciava fare la lezione da una persona magari più giovane di lui? Veniva punito con una sgridata per la sua franchezza? E non gli si diceva nulla sul motivo del suo arresto e su chi l'aveva ordinato? Lo prese una certa agitazione, cominciò ad andare in su e in giù senza che nessuno glielo impedisse, spinse indietro i polsini, si tastò il petto, si ravviò i capelli, passò davanti ai tre e disse: «È assurdo», al che quelli si volsero verso di lui e lo fissarono cortesi ma severi, e infine si arrestò di nuovo davanti al tavolo dell'ispettore. «Il procuratore Hasterer è un mio buon amico», disse, «posso telefonargli?». «Certo», disse l'ispettore, «ma non so che senso possa avere, a meno che lei non abbia da discutere con lui di qualche questione privata». «Che senso?», gridò K., più sorpreso che irritato. «Ma chi è lei? Pretende un senso e si comporta nel modo più insensato che ci sia. Roba da far piangere i sassi! Questi uomini mi hanno prima aggredito, e adesso se ne stanno seduti o girano qui intorno a guardarmi mentre lei mi fa scuola! Che senso avrebbe telefonare a un procuratore se, come si pretende, sono in arresto? Bene, non telefonerò». «Ma sì», disse l'ispettore, e con la mano fece un cenno verso l'anticamera dov'era il telefono, «prego, telefoni pure». «No, non voglio più», disse K., e andò verso la finestra. Di fronte, quei tre erano ancora alla finestra, e solo ora che K. si era accostato alla finestra parvero un po' disturbati nella loro tranquillità di spettatori. I due vecchi fecero per alzarsi, ma l'uomo dietro di loro li calmò. «Di là ci sono anche degli spettatori», gridò K. rivolto all'ispettore, e indicò fuori con l'indice. «Via di lì», gridò poi dall'altra parte della strada. I tre si ritrassero subito di qualche passo, i due vecchi addirittura dietro l'uomo che li copriva con il suo grosso corpo e, a giudicare dai movimenti della bocca, diceva qualcosa che la distanza rendeva incomprensibile. Ma non scomparvero del tutto, sembravano piuttosto aspettare il momento di potersi riaccostare inosservati alla finestra. «Razza d'indiscreti, maleducati», disse K., ritirandosi nella stanza. L'ispettore parve d'accordo, come K. credette di capire con un'occhiata in tralice. Ma era altrettanto possibile che non avesse prestato affatto attenzione, perché era lì che premeva una mano sul comodino e sembrava confrontare la lunghezza delle dita. Le due guardie sedevano su un baule coperto da un drappo ricamato e si sfregavano le ginocchia. I tre giovani, con le mani sui fianchi, si guardavano intorno sfaccendati. C'era silenzio, come in un ufficio abbandonato. «Bene, signori», esclamò K., e gli parve per un istante di portarseli tutti sulle spalle, «a vedervi si direbbe che la mia faccenda sia chiusa. Sono del parere che la cosa migliore sia non stare più a chiedersi se il vostro modo di procedere sia stato legittimo o illegittimo, e chiudere qui la cosa e riconciliarci con una stretta di mano. Se siete anche voi del mio parere, ecco qua...» e si avvicinò al tavolino dell'ispettore porgendogli la mano. L'ispettore levò gli occhi, si morse le labbra e guardò la mano che K. gli tendeva; e K. continuava a credere che l'ispettore avrebbe accettato la stretta. Ma quello si alzò, prese un cappello duro, tondo, che stava sul letto della signorina Bürstner, e se lo calzò con le due mani, delicatamente, come si fa quando si prova un cappello nuovo. «A lei sembra proprio tutto semplice!», disse a K., «chiudere qui la cosa e riconciliarci, è questo che intendeva? No, no, proprio impossibile. Con questo, peraltro, non voglio affatto dire che deve disperare. No, perché mai? Lei è solo in arresto, tutto qui. Questo è quanto dovevo comunicarle, l'ho fatto e ho anche visto come lei l'ha presa. E con questo per oggi basta, ci possiamo congedare, almeno per il momento. Immagino vorrà andare in banca adesso, no?». «In banca?», disse K., «pensavo di essere in arresto». Nella domanda di K. c'era un certo tono di sfida, perché, sebbene la sua stretta di mano non fosse stata accettata, si sentiva, specie da quando l'ispettore si era levato in piedi, sempre più indipendente da tutta quella gente. Era un gioco con loro. Se se ne fossero andati, aveva intenzione di corrergli dietro fin sul portone e offrirsi in arresto. Perciò ripeté: «Come posso andare in banca, se sono in arresto?». «Vedo che lei mi ha frainteso», disse l'ispettore, che già era vicino alla porta. «Lei è in arresto, certo, ma questo non deve impedirle di svolgere la sua professione. E nemmeno di mantenere le sue abitudini». «Allora lo stato d'arresto non è poi così male», disse K. avvicinandosi all'ispettore. «Non ho mai voluto dire altro», fece quello. «Ma allora, nemmeno capisco la necessità di notificarmi l'arresto», disse K., e si avvicinò ancora di più. Anche gli altri si erano avvicinati. Ora erano tutti radunati in uno spazio ristretto vicino alla porta. «Era mio dovere», disse l'ispettore. «Un dovere stupido», fece K. inflessibile. «Può darsi», rispose l'ispettore, «ma non staremo a perder tempo con questi discorsi. Avevo pensato che lei volesse andare in banca. Dato che lei sta a pesare ogni parola, aggiungo: non la costringo ad andare in banca, avevo solo pensato che volesse andarci. E per agevolarle la cosa, per far sì che il suo arrivo in banca passi il più possibile inosservato, le ho messo qui a disposizione questi tre signori, suoi colleghi». «Come?», esclamò K., e osservò stupito i tre. Questi tre giovani banali, esangui, che ricordava solo come gruppo nelle fotografie, erano veramente impiegati della banca, colleghi era dire troppo e rivelava una lacuna nell'onniscienza dell'ispettore, ma impiegati subalterni della banca comunque erano. Come aveva potuto sfuggirgli? Doveva esser stato ben occupato dall'ispettore e dalle guardie per non riconoscere quei tre! Il rigido Rabensteiner che agitava sempre le mani, il biondo Kullich con gli occhi infossati, e Kaminer con quel suo insopportabile sorriso dovuto a una contrazione muscolare cronica. «Buon giorno», disse K. dopo un istante di esitazione, porgendo la mano ai tre che fecero un inchino compito. «Non vi avevo proprio riconosciuti. Allora, si va a lavorare adesso, no?». I tre annuirono ridendo e, pieni di premura, come se non avessero aspettato altro per tutto il tempo, quando K. cercò il cappello rimasto in camera sua, si precipitarono a prenderlo, tutti insieme, uno dietro l'altro, lasciando intuire tuttavia così un certo imbarazzo. K. non si mosse e li seguì con lo sguardo attraverso le due porte aperte, ultimo era, naturalmente l'apatico Rabensteiner, che aveva appena accennato un elegante trotto. Kaminer gli porse il cappello e K. dovette esplicitamente dirsi, come del resto aveva spesso dovuto fare in banca, che il sorriso di Kaminer non era intenzionale, e che anzi sorridere di proposito non gli riusciva proprio. In anticamera la signora Grubach, che non sembrava affatto consapevole della sua colpa, aprì la porta d'ingresso a tutta la compagnia, e K. abbassò lo sguardo come molte altre volte sul nastro del suo grembiule che le solcava a fondo, del tutto inutilmente, il corpo poderoso. Una volta sotto, K., orologio in mano, decise di prendere un'automobile, per non accrescere inutilmente il ritardo che era già di mezz'ora. Kaminer corse all'angolo per prendere la vettura, gli altri due cercavano palesamente di distrarre K., quando Kullich all'improvviso indicò il portone di fronte in cui era appena apparso l'uomo alto con la barbetta bionda che, un po' imbarazzato, in un primo momento, di mostrarsi ora in tutta la sua statura, indietreggiò al muro e vi si appoggiò. I vecchi dovevano essere ancora sulle scale. K. s'irritò che Kullich gli facesse notare l'uomo che lui stesso aveva già visto prima, che anzi aveva addirittura aspettato. «Non guardi da quella parte!», proruppe, senza rendersi conto della stranezza di una tale ingiunzione rivolta a persone libere. Ma non fu nemmeno necessario un chiarimento, perché in quell'istante arrivò l'automobile, si sedettero e partirono. K. si ricordò allora di non avere notato quando l'ispettore e le guardie erano andati via, l'ispettore gli aveva nascosto i tre impiegati e adesso, a loro volta, gli impiegati l'ispettore. Non era prova di grande presenza di spirito, e K. si propose di sorvegliarsi meglio a questo riguardo. Tuttavia si volse ancora involontariamente all'indietro e si sporse dall'automobile, se mai riuscisse a vedere ancora l'ispettore e le guardie. Ma subito si rigirò e si appoggiò comodamente nell'angolo, senza aver fatto nemmeno il tentativo di cercare qualcuno. Sebbene non paresse, proprio ora avrebbe avuto bisogno di una parola di conforto, ma tutti sembravano stanchi, Rabensteiner guardava fuori a destra, Kullich a sinistra, solo Kaminer era a disposizione con il suo ghigno su cui, purtroppo, la pietà umana impediva di scherzare.",
+        "payloadType": "str",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "33862ae58cf84986",
+                "f30a9fc516648329",
+                "eef228fc2e28c438"
+            ]
+        ]
+    },
+    {
+        "id": "33862ae58cf84986",
+        "type": "function",
+        "z": "f1cdb249141ff7ad",
+        "name": "split_text",
+        "func": "const chunk_length = parseInt(msg.payload.length / 3)\nvar out = {}\nout[\"first_section\"]= msg.payload.slice(0, chunk_length)\nout[\"second_section\"]= msg.payload.slice(chunk_length, 2 * chunk_length)\nout[\"third_section\"]= msg.payload.slice(2 * chunk_length, msg.payload.length)\nmsg.payload = out\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "99494b372ef726a0"
+            ]
+        ]
+    },
+    {
+        "id": "99494b372ef726a0",
+        "type": "split",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "splt": "\\0",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "46cf80856e066f03"
+            ]
+        ]
+    },
+    {
+        "id": "46cf80856e066f03",
+        "type": "switch",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "first_section",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "second_section",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "third_section",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "eba04bcbf28ae88f"
+            ],
+            [
+                "c44f7b3e66b875b7"
+            ],
+            [
+                "59ca6524fcec3318"
+            ]
+        ]
+    },
+    {
+        "id": "c44f7b3e66b875b7",
+        "type": "producer",
+        "z": "f1cdb249141ff7ad",
+        "clientId": "second_section_producer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "second_section",
+        "name": "second_section",
+        "x": 560,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "59ca6524fcec3318",
+        "type": "function",
+        "z": "f1cdb249141ff7ad",
+        "name": "count_third_section",
+        "func": "var counter = 0\nfor (var i = 0; i < msg.payload.length; i++){\n    if (msg.payload[i] === 'm'){\n        counter++\n    }\n}\nmsg.payload = counter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "1a94673b6993cd01"
+            ]
+        ]
+    },
+    {
+        "id": "1a94673b6993cd01",
+        "type": "join",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1090,
+        "y": 280,
+        "wires": [
+            [
+                "46ed2fef9ae9cf71"
+            ]
+        ]
+    },
+    {
+        "id": "f30a9fc516648329",
+        "type": "consumer",
+        "z": "f1cdb249141ff7ad",
+        "clientId": "first_section_count_consumer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "first_section_count",
+        "name": "count_first_section",
+        "x": 450,
+        "y": 80,
+        "wires": [
+            [
+                "40ac9cd2555d084d",
+                "24051302467ffb0b"
+            ]
+        ]
+    },
+    {
+        "id": "eef228fc2e28c438",
+        "type": "consumer",
+        "z": "f1cdb249141ff7ad",
+        "clientId": "second_section_count_consumer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "second_section_count",
+        "name": "count_second_section",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "1137a6988ebede4c"
+            ]
+        ]
+    },
+    {
+        "id": "46ed2fef9ae9cf71",
+        "type": "function",
+        "z": "f1cdb249141ff7ad",
+        "name": "sum_and_show",
+        "func": "var total_count = 0;\nvar output;\nfor (var i = 0; i < 3; i++){\n    total_count += parseInt(msg.payload[i])\n}\n\nmsg.payload = total_count\noutput = \"There are \" + total_count + \" letter m\"\n\nconsole.log(output)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40ac9cd2555d084d",
+        "type": "function",
+        "z": "f1cdb249141ff7ad",
+        "name": "first_encapsulate_message",
+        "func": "var new_message = {payload: msg.toString(), topic: \"first_section_count\"}\nreturn new_message;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 80,
+        "wires": [
+            [
+                "1a94673b6993cd01",
+                "7a66505ce6594fc5"
+            ]
+        ]
+    },
+    {
+        "id": "1137a6988ebede4c",
+        "type": "function",
+        "z": "f1cdb249141ff7ad",
+        "name": "second_encapsulate_message",
+        "func": "var new_message = {payload: msg.toString(), topic: \"second_section_count\"}\nreturn new_message;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 120,
+        "wires": [
+            [
+                "1a94673b6993cd01"
+            ]
+        ]
+    },
+    {
+        "id": "24051302467ffb0b",
+        "type": "debug",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "7a66505ce6594fc5",
+        "type": "debug",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 20,
+        "wires": []
+    }
+]

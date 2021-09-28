@@ -1,0 +1,121 @@
+[
+    {
+        "id": "2a5b1e7cb9888d6f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0b7e326708e99c76",
+        "type": "consumer",
+        "z": "2a5b1e7cb9888d6f",
+        "clientId": "first_section_consumer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "first_section",
+        "name": "first_section",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "bd1e6adc513c38f6",
+                "519e661658c4b45f"
+            ]
+        ]
+    },
+    {
+        "id": "bd1e6adc513c38f6",
+        "type": "function",
+        "z": "2a5b1e7cb9888d6f",
+        "name": "count_section",
+        "func": "var counter = 0\nfor (var i = 0; i < msg.toString().length; i++){\n    if (msg.toString()[i] === 'm'){\n        counter++\n    }\n}\n\nvar newMsg = { payload: counter.toString(),topic:\"first_section_count\" };\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 320,
+        "wires": [
+            [
+                "5708a2c4d1876a69",
+                "51e70afa6d9e9be2"
+            ]
+        ]
+    },
+    {
+        "id": "51e70afa6d9e9be2",
+        "type": "producer",
+        "z": "2a5b1e7cb9888d6f",
+        "clientId": "first_section_count_producer",
+        "broker": "2.tcp.ngrok.io:12219",
+        "topic": "first_section_count",
+        "name": "first_section_count",
+        "x": 1050,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "331c0143d732ee13",
+        "type": "inject",
+        "z": "2a5b1e7cb9888d6f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "0b7e326708e99c76"
+            ]
+        ]
+    },
+    {
+        "id": "519e661658c4b45f",
+        "type": "debug",
+        "z": "2a5b1e7cb9888d6f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5708a2c4d1876a69",
+        "type": "debug",
+        "z": "2a5b1e7cb9888d6f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 160,
+        "wires": []
+    }
+]
