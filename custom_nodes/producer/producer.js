@@ -20,7 +20,6 @@ module.exports = function (RED) {
                         { value: msg.payload }
                     ],
                 })
-                await producer.disconnect()
             }
 
             sendMessage();
