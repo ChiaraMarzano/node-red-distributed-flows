@@ -11,7 +11,7 @@
         "type": "producer",
         "z": "f1cdb249141ff7ad",
         "clientId": "first_section_producer",
-        "broker": "2.tcp.ngrok.io:12219",
+        "broker": "4.tcp.ngrok.io:15544",
         "topic": "first_section",
         "name": "first_section",
         "x": 570,
@@ -44,8 +44,7 @@
         "wires": [
             [
                 "33862ae58cf84986",
-                "f30a9fc516648329",
-                "eef228fc2e28c438"
+                "f30a9fc516648329"
             ]
         ]
     },
@@ -54,7 +53,7 @@
         "type": "function",
         "z": "f1cdb249141ff7ad",
         "name": "split_text",
-        "func": "const chunk_length = parseInt(msg.payload.length / 3)\nvar out = {}\nout[\"first_section\"]= msg.payload.slice(0, chunk_length)\nout[\"second_section\"]= msg.payload.slice(chunk_length, 2 * chunk_length)\nout[\"third_section\"]= msg.payload.slice(2 * chunk_length, msg.payload.length)\nmsg.payload = out\nreturn msg;",
+        "func": "const chunk_length = parseInt(msg.payload.length / 2)\nvar out = {}\nout[\"first_section\"]= msg.payload.slice(0, chunk_length)\nout[\"second_section\"]= msg.payload.slice(chunk_length, msg.payload.length)\nmsg.payload = out\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -102,43 +101,24 @@
             },
             {
                 "t": "eq",
-                "v": "second_section",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
                 "v": "third_section",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
+        "outputs": 2,
         "x": 290,
         "y": 420,
         "wires": [
             [
-                "eba04bcbf28ae88f"
-            ],
-            [
-                "c44f7b3e66b875b7"
+                "eba04bcbf28ae88f",
+                "30b9f64a76e1d55a"
             ],
             [
                 "59ca6524fcec3318"
             ]
         ]
-    },
-    {
-        "id": "c44f7b3e66b875b7",
-        "type": "producer",
-        "z": "f1cdb249141ff7ad",
-        "clientId": "second_section_producer",
-        "broker": "2.tcp.ngrok.io:12219",
-        "topic": "second_section",
-        "name": "second_section",
-        "x": 560,
-        "y": 420,
-        "wires": []
     },
     {
         "id": "59ca6524fcec3318",
@@ -192,7 +172,7 @@
         "type": "consumer",
         "z": "f1cdb249141ff7ad",
         "clientId": "first_section_count_consumer",
-        "broker": "2.tcp.ngrok.io:12219",
+        "broker": "4.tcp.ngrok.io:15544",
         "topic": "first_section_count",
         "name": "count_first_section",
         "x": 450,
@@ -201,22 +181,6 @@
             [
                 "40ac9cd2555d084d",
                 "24051302467ffb0b"
-            ]
-        ]
-    },
-    {
-        "id": "eef228fc2e28c438",
-        "type": "consumer",
-        "z": "f1cdb249141ff7ad",
-        "clientId": "second_section_count_consumer",
-        "broker": "2.tcp.ngrok.io:12219",
-        "topic": "second_section_count",
-        "name": "count_second_section",
-        "x": 460,
-        "y": 120,
-        "wires": [
-            [
-                "1137a6988ebede4c"
             ]
         ]
     },
@@ -258,25 +222,6 @@
         ]
     },
     {
-        "id": "1137a6988ebede4c",
-        "type": "function",
-        "z": "f1cdb249141ff7ad",
-        "name": "second_encapsulate_message",
-        "func": "var new_message = {payload: msg.toString(), topic: \"second_section_count\"}\nreturn new_message;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 870,
-        "y": 120,
-        "wires": [
-            [
-                "1a94673b6993cd01"
-            ]
-        ]
-    },
-    {
         "id": "24051302467ffb0b",
         "type": "debug",
         "z": "f1cdb249141ff7ad",
@@ -307,6 +252,23 @@
         "statusType": "auto",
         "x": 1090,
         "y": 20,
+        "wires": []
+    },
+    {
+        "id": "30b9f64a76e1d55a",
+        "type": "debug",
+        "z": "f1cdb249141ff7ad",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 260,
         "wires": []
     }
 ]
