@@ -6,7 +6,8 @@
             clientId: { value: "" },
             broker: { value: "" },
             topic: { value: "" },
-            name: { value: "" }
+            name: { value: "" },
+	    group: { value: "" }
         },
         inputs: 1,
         outputs: 1,
@@ -25,8 +26,10 @@
         <input type="text" id="node-input-topic" placeholder="topic"><br>
         <label for="node-input-name"><i class="fa fa-tag"></i>Broker</label>
         <input type="text" id="node-input-broker" placeholder="broker"><br>
-        <label for="node-input-name"><i class="fa fa-tag"></i>clientId</label>
+        <label for="node-input-name"><i class="fa fa-tag"></i>ClientId</label>
         <input type="text" id="node-input-clientId" placeholder="clientId">
+        <label for="node-input-name"><i class="fa fa-tag"></i>Group</label>
+        <input type="text" id="node-input-group" placeholder="group">
     </div>
 </script>
 

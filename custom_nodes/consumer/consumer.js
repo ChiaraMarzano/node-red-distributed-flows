@@ -8,7 +8,7 @@ module.exports = function (RED) {
                 clientId: config.clientId,
                 brokers: [config.broker]
             })
-            const consumer = kafka.consumer({ groupId: 'test-group' })
+            const consumer = kafka.consumer({ groupId: config.group })
             await consumer.subscribe({ topic: config.topic, fromBeginning: true })
             console.log(config.broker)
             console.log(config.clientId)
