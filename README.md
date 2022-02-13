@@ -1,4 +1,4 @@
-# Node red distribute flows
+# Node red distributed flows
 
 This project implements two custom Node-red nodes, Producer and Consumer, that allow distributed flows between two or more devices.
 
